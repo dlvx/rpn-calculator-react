@@ -39,9 +39,9 @@ export function calculate(input: string, operands: number[]): number[] {
       const operator = element;
       const operation = OPERATOR_FUNCTIONS[operator];
       const b = operands.pop() || 0;
-      const a = operands.pop() || 0;
-      const result = operation(a, b);
-      operands = result ? [...operands, result] : operands;
+      const a = operands.pop();
+      const result = a && b ? operation(a, b) : b;
+      operands = [...operands, result];
     }
   });
 
