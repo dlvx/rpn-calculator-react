@@ -7,7 +7,7 @@ function App() {
   const [operands, setOperands] = useState<number[]>([]);
 
   const inputHandler = (input: string) => {
-    const pass = input.match(/^[0-9qc+\-*\/\s]*$/);
+    const pass = input.match(/^[0-9qc+\-*/\s]*$/);
 
     if (pass) {
       if (input === "c" || input === "q") {
