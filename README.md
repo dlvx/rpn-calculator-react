@@ -6,11 +6,15 @@ While it does duplicate the **operations.ts** file from the other project, there
 
 For this version in particular, I went for a quick implementation and chose a package called **react-terminal-ui** that simulates a CLI. I would say tho, the Node CLI version performs better than this one.
 
+To run this app, the same requirements and commands used to run the CLI version should be sufficien (clone, npm install and npm start).
+
 #### Live Demo
 
 You can find a live demo deployed to Netlify [here](https://stunning-cupcake-063045.netlify.app/)
 
 The following is the readme as found in the other repository.
+
+---
 
 ### Description
 
